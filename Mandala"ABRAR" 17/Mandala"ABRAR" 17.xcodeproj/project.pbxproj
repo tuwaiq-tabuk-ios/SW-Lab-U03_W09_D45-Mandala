@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		251A5B982760E7B600E0796D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251A5B972760E7B600E0796D /* AppDelegate.swift */; };
+		251A5B9A2760E7B600E0796D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251A5B992760E7B600E0796D /* SceneDelegate.swift */; };
+		251A5BA12760E7B700E0796D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 251A5BA02760E7B700E0796D /* Assets.xcassets */; };
+		251A5BA42760E7B700E0796D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 251A5BA22760E7B700E0796D /* LaunchScreen.storyboard */; };
+		251A5BAF2760E7B700E0796D /* Mandala_ABRAR_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251A5BAE2760E7B700E0796D /* Mandala_ABRAR_Tests.swift */; };
+		251A5BBA2760E7B700E0796D /* Mandala_ABRAR_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251A5BB92760E7B700E0796D /* Mandala_ABRAR_UITests.swift */; };
+		251A5BCA2760E7C200E0796D /* UIColor+Mandala.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251A5BC82760E7C200E0796D /* UIColor+Mandala.swift */; };
+		251A5BCB2760E7C200E0796D /* UIImage+Mandala.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251A5BC92760E7C200E0796D /* UIImage+Mandala.swift */; };
+		251A5BD02760E7CE00E0796D /* MoodEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251A5BCD2760E7CE00E0796D /* MoodEntry.swift */; };
+		251A5BD12760E7CE00E0796D /* MoodsConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251A5BCE2760E7CE00E0796D /* MoodsConfigurable.swift */; };
+		251A5BD22760E7CE00E0796D /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251A5BCF2760E7CE00E0796D /* Mood.swift */; };
+		251A5BD62760E7D500E0796D /* MoodSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251A5BD42760E7D500E0796D /* MoodSelectionViewController.swift */; };
+		251A5BD72760E7D500E0796D /* MoodListViewController .swift in Sources */ = {isa = PBXBuildFile; fileRef = 251A5BD52760E7D500E0796D /* MoodListViewController .swift */; };
+		251A5BDB2760E85000E0796D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 251A5BD92760E85000E0796D /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		251A5BAB2760E7B700E0796D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 251A5B8C2760E7B600E0796D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 251A5B932760E7B600E0796D;
+			remoteInfo = "Mandala\"ABRAR\"";
+		};
+		251A5BB62760E7B700E0796D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 251A5B8C2760E7B600E0796D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 251A5B932760E7B600E0796D;
+			remoteInfo = "Mandala\"ABRAR\"";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		251A5B972760E7B600E0796D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		251A5B992760E7B600E0796D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		251A5BA02760E7B700E0796D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		251A5BA32760E7B700E0796D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		251A5BA52760E7B700E0796D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		251A5BAE2760E7B700E0796D /* Mandala_ABRAR_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mandala_ABRAR_Tests.swift; sourceTree = "<group>"; };
+		251A5BB02760E7B700E0796D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		251A5BB92760E7B700E0796D /* Mandala_ABRAR_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mandala_ABRAR_UITests.swift; sourceTree = "<group>"; };
+		251A5BBB2760E7B700E0796D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		251A5BC82760E7C200E0796D /* UIColor+Mandala.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Mandala.swift"; sourceTree = "<group>"; };
+		251A5BC92760E7C200E0796D /* UIImage+Mandala.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Mandala.swift"; sourceTree = "<group>"; };
+		251A5BCD2760E7CE00E0796D /* MoodEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodEntry.swift; sourceTree = "<group>"; };
+		251A5BCE2760E7CE00E0796D /* MoodsConfigurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodsConfigurable.swift; sourceTree = "<group>"; };
+		251A5BCF2760E7CE00E0796D /* Mood.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
+		251A5BD42760E7D500E0796D /* MoodSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodSelectionViewController.swift; sourceTree = "<group>"; };
+		251A5BD52760E7D500E0796D /* MoodListViewController .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MoodListViewController .swift"; sourceTree = "<group>"; };
+		251A5BDA2760E85000E0796D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		257C85F92760EAF800481AB9 /* Mandala"ABRAR".app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mandala\"ABRAR\".app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		257C85FA2760EAF800481AB9 /* Mandala"ABRAR"Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mandala\"ABRAR\"Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		257C85FB2760EAF800481AB9 /* Mandala"ABRAR"UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mandala\"ABRAR\"UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		251A5B912760E7B600E0796D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		251A5BA72760E7B700E0796D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		251A5BB22760E7B700E0796D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		251A5B8B2760E7B600E0796D = {
+			isa = PBXGroup;
+			children = (
+				251A5B962760E7B600E0796D /* Mandala"ABRAR" */,
+				251A5BAD2760E7B700E0796D /* Mandala"ABRAR"Tests */,
+				251A5BB82760E7B700E0796D /* Mandala"ABRAR"UITests */,
+				257C85F92760EAF800481AB9 /* Mandala"ABRAR".app */,
+				257C85FA2760EAF800481AB9 /* Mandala"ABRAR"Tests.xctest */,
+				257C85FB2760EAF800481AB9 /* Mandala"ABRAR"UITests.xctest */,
+			);
+			sourceTree = "<group>";
+		};
+		251A5B962760E7B600E0796D /* Mandala"ABRAR" */ = {
+			isa = PBXGroup;
+			children = (
+				251A5BD82760E85000E0796D /* View */,
+				251A5BD32760E7D500E0796D /* Controller */,
+				251A5BCC2760E7CE00E0796D /* Model */,
+				251A5BC72760E7C200E0796D /* Extension */,
+				251A5BDC2760E9D300E0796D /* Support */,
+				251A5BA52760E7B700E0796D /* Info.plist */,
+			);
+			path = "Mandala\"ABRAR\"";
+			sourceTree = "<group>";
+		};
+		251A5BAD2760E7B700E0796D /* Mandala"ABRAR"Tests */ = {
+			isa = PBXGroup;
+			children = (
+				251A5BAE2760E7B700E0796D /* Mandala_ABRAR_Tests.swift */,
+				251A5BB02760E7B700E0796D /* Info.plist */,
+			);
+			path = "Mandala\"ABRAR\"Tests";
+			sourceTree = "<group>";
+		};
+		251A5BB82760E7B700E0796D /* Mandala"ABRAR"UITests */ = {
+			isa = PBXGroup;
+			children = (
+				251A5BB92760E7B700E0796D /* Mandala_ABRAR_UITests.swift */,
+				251A5BBB2760E7B700E0796D /* Info.plist */,
+			);
+			path = "Mandala\"ABRAR\"UITests";
+			sourceTree = "<group>";
+		};
+		251A5BC72760E7C200E0796D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				251A5BC82760E7C200E0796D /* UIColor+Mandala.swift */,
+				251A5BC92760E7C200E0796D /* UIImage+Mandala.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		251A5BCC2760E7CE00E0796D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				251A5BCD2760E7CE00E0796D /* MoodEntry.swift */,
+				251A5BCE2760E7CE00E0796D /* MoodsConfigurable.swift */,
+				251A5BCF2760E7CE00E0796D /* Mood.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		251A5BD32760E7D500E0796D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				251A5BD42760E7D500E0796D /* MoodSelectionViewController.swift */,
+				251A5BD52760E7D500E0796D /* MoodListViewController .swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		251A5BD82760E85000E0796D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				251A5BD92760E85000E0796D /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		251A5BDC2760E9D300E0796D /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				251A5B992760E7B600E0796D /* SceneDelegate.swift */,
+				251A5BA22760E7B700E0796D /* LaunchScreen.storyboard */,
+				251A5B972760E7B600E0796D /* AppDelegate.swift */,
+				251A5BA02760E7B700E0796D /* Assets.xcassets */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		251A5B932760E7B600E0796D /* Mandala"ABRAR" */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 251A5BBE2760E7B700E0796D /* Build configuration list for PBXNativeTarget "Mandala"ABRAR"" */;
+			buildPhases = (
+				251A5B902760E7B600E0796D /* Sources */,
+				251A5B912760E7B600E0796D /* Frameworks */,
+				251A5B922760E7B600E0796D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mandala\"ABRAR\"";
+			productName = "Mandala\"ABRAR\"";
+			productReference = 257C85F92760EAF800481AB9 /* Mandala"ABRAR".app */;
+			productType = "com.apple.product-type.application";
+		};
+		251A5BA92760E7B700E0796D /* Mandala"ABRAR"Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 251A5BC12760E7B700E0796D /* Build configuration list for PBXNativeTarget "Mandala"ABRAR"Tests" */;
+			buildPhases = (
+				251A5BA62760E7B700E0796D /* Sources */,
+				251A5BA72760E7B700E0796D /* Frameworks */,
+				251A5BA82760E7B700E0796D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				251A5BAC2760E7B700E0796D /* PBXTargetDependency */,
+			);
+			name = "Mandala\"ABRAR\"Tests";
+			productName = "Mandala\"ABRAR\"Tests";
+			productReference = 257C85FA2760EAF800481AB9 /* Mandala"ABRAR"Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		251A5BB42760E7B700E0796D /* Mandala"ABRAR"UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 251A5BC42760E7B700E0796D /* Build configuration list for PBXNativeTarget "Mandala"ABRAR"UITests" */;
+			buildPhases = (
+				251A5BB12760E7B700E0796D /* Sources */,
+				251A5BB22760E7B700E0796D /* Frameworks */,
+				251A5BB32760E7B700E0796D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				251A5BB72760E7B700E0796D /* PBXTargetDependency */,
+			);
+			name = "Mandala\"ABRAR\"UITests";
+			productName = "Mandala\"ABRAR\"UITests";
+			productReference = 257C85FB2760EAF800481AB9 /* Mandala"ABRAR"UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		251A5B8C2760E7B600E0796D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					251A5B932760E7B600E0796D = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					251A5BA92760E7B700E0796D = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 251A5B932760E7B600E0796D;
+					};
+					251A5BB42760E7B700E0796D = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 251A5B932760E7B600E0796D;
+					};
+				};
+			};
+			buildConfigurationList = 251A5B8F2760E7B600E0796D /* Build configuration list for PBXProject "Mandala"ABRAR" 17" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 251A5B8B2760E7B600E0796D;
+			productRefGroup = 251A5B8B2760E7B600E0796D;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				251A5B932760E7B600E0796D /* Mandala"ABRAR" */,
+				251A5BA92760E7B700E0796D /* Mandala"ABRAR"Tests */,
+				251A5BB42760E7B700E0796D /* Mandala"ABRAR"UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		251A5B922760E7B600E0796D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				251A5BA42760E7B700E0796D /* LaunchScreen.storyboard in Resources */,
+				251A5BA12760E7B700E0796D /* Assets.xcassets in Resources */,
+				251A5BDB2760E85000E0796D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		251A5BA82760E7B700E0796D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		251A5BB32760E7B700E0796D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		251A5B902760E7B600E0796D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				251A5BD72760E7D500E0796D /* MoodListViewController .swift in Sources */,
+				251A5BCB2760E7C200E0796D /* UIImage+Mandala.swift in Sources */,
+				251A5B982760E7B600E0796D /* AppDelegate.swift in Sources */,
+				251A5BD12760E7CE00E0796D /* MoodsConfigurable.swift in Sources */,
+				251A5BD22760E7CE00E0796D /* Mood.swift in Sources */,
+				251A5BD62760E7D500E0796D /* MoodSelectionViewController.swift in Sources */,
+				251A5BCA2760E7C200E0796D /* UIColor+Mandala.swift in Sources */,
+				251A5B9A2760E7B600E0796D /* SceneDelegate.swift in Sources */,
+				251A5BD02760E7CE00E0796D /* MoodEntry.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		251A5BA62760E7B700E0796D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				251A5BAF2760E7B700E0796D /* Mandala_ABRAR_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		251A5BB12760E7B700E0796D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				251A5BBA2760E7B700E0796D /* Mandala_ABRAR_UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		251A5BAC2760E7B700E0796D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 251A5B932760E7B600E0796D /* Mandala"ABRAR" */;
+			targetProxy = 251A5BAB2760E7B700E0796D /* PBXContainerItemProxy */;
+		};
+		251A5BB72760E7B700E0796D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 251A5B932760E7B600E0796D /* Mandala"ABRAR" */;
+			targetProxy = 251A5BB62760E7B700E0796D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		251A5BA22760E7B700E0796D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				251A5BA32760E7B700E0796D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		251A5BD92760E85000E0796D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				251A5BDA2760E85000E0796D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		251A5BBC2760E7B700E0796D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		251A5BBD2760E7B700E0796D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		251A5BBF2760E7B700E0796D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8FD876BG69;
+				INFOPLIST_FILE = "Mandala\"ABRAR\"/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Abrar.Mandala-ABRAR-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		251A5BC02760E7B700E0796D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8FD876BG69;
+				INFOPLIST_FILE = "Mandala\"ABRAR\"/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Abrar.Mandala-ABRAR-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		251A5BC22760E7B700E0796D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8FD876BG69;
+				INFOPLIST_FILE = "Mandala\"ABRAR\"Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Abrar.Mandala-ABRAR-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mandala\"ABRAR\".app/Mandala\"ABRAR\"";
+			};
+			name = Debug;
+		};
+		251A5BC32760E7B700E0796D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8FD876BG69;
+				INFOPLIST_FILE = "Mandala\"ABRAR\"Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Abrar.Mandala-ABRAR-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mandala\"ABRAR\".app/Mandala\"ABRAR\"";
+			};
+			name = Release;
+		};
+		251A5BC52760E7B700E0796D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8FD876BG69;
+				INFOPLIST_FILE = "Mandala\"ABRAR\"UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Abrar.Mandala-ABRAR-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mandala\"ABRAR\"";
+			};
+			name = Debug;
+		};
+		251A5BC62760E7B700E0796D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8FD876BG69;
+				INFOPLIST_FILE = "Mandala\"ABRAR\"UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Abrar.Mandala-ABRAR-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mandala\"ABRAR\"";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		251A5B8F2760E7B600E0796D /* Build configuration list for PBXProject "Mandala"ABRAR" 17" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				251A5BBC2760E7B700E0796D /* Debug */,
+				251A5BBD2760E7B700E0796D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		251A5BBE2760E7B700E0796D /* Build configuration list for PBXNativeTarget "Mandala"ABRAR"" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				251A5BBF2760E7B700E0796D /* Debug */,
+				251A5BC02760E7B700E0796D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		251A5BC12760E7B700E0796D /* Build configuration list for PBXNativeTarget "Mandala"ABRAR"Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				251A5BC22760E7B700E0796D /* Debug */,
+				251A5BC32760E7B700E0796D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		251A5BC42760E7B700E0796D /* Build configuration list for PBXNativeTarget "Mandala"ABRAR"UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				251A5BC52760E7B700E0796D /* Debug */,
+				251A5BC62760E7B700E0796D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 251A5B8C2760E7B600E0796D /* Project object */;
+}
