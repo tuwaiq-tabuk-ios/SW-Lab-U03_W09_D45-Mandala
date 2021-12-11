@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Mood Selection View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MoodSelectionViewController" customModule="Mandala__hajerMohamed_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JxF-qg-s8g">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <connections>
+                                    <segue destination="CVb-Uh-kgE" kind="embed" identifier="embedContainerViewController" id="4hc-ue-5Gf"/>
+                                </connections>
+                            </containerView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pB7-ba-FjL">
+                                <rect key="frame" x="0.0" y="804" width="414" height="58"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="1Bb-z2-oMQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="58"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="joI-Md-NjL" customClass="ImageSelector" customModule="Mandala__hajerMohamed_" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="8" width="414" height="50"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="qGu-aT-PVw"/>
+                                            </constraints>
+                                            <connections>
+                                                <action selector="moodSelectionChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="aSr-SO-KKF"/>
+                                            </connections>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="joI-Md-NjL" firstAttribute="top" secondItem="1Bb-z2-oMQ" secondAttribute="top" constant="8" id="V3I-1x-os9"/>
+                                        <constraint firstAttribute="bottom" secondItem="joI-Md-NjL" secondAttribute="bottom" id="lis-js-SzU"/>
+                                        <constraint firstItem="joI-Md-NjL" firstAttribute="leading" secondItem="1Bb-z2-oMQ" secondAttribute="leading" id="qZn-C1-rOR"/>
+                                        <constraint firstAttribute="trailing" secondItem="joI-Md-NjL" secondAttribute="trailing" id="wbs-dF-TJy"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j9R-gs-bJx">
+                                <rect key="frame" x="173.5" y="736" width="67" height="48"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="KHQ-ML-DNP"/>
+                                </constraints>
+                                <color key="tintColor" red="0.96078431369999995" green="0.95686274510000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="addMoodTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xZB-i9-YhF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="JxF-qg-s8g" secondAttribute="trailing" id="10e-ms-ckB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pB7-ba-FjL" secondAttribute="trailing" id="3ME-yt-Y1h"/>
+                            <constraint firstItem="JxF-qg-s8g" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="W87-xD-Tep"/>
+                            <constraint firstItem="JxF-qg-s8g" firstAttribute="bottom" secondItem="pB7-ba-FjL" secondAttribute="bottom" id="aFc-VC-zUD"/>
+                            <constraint firstItem="JxF-qg-s8g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hcI-Eu-cba"/>
+                            <constraint firstItem="j9R-gs-bJx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m9Y-p2-xFy"/>
+                            <constraint firstItem="pB7-ba-FjL" firstAttribute="top" secondItem="j9R-gs-bJx" secondAttribute="bottom" constant="20" id="vay-R2-4sE"/>
+                            <constraint firstItem="pB7-ba-FjL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wC5-sf-tVb"/>
+                            <constraint firstItem="pB7-ba-FjL" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="whi-Xf-0q6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addMoodButton" destination="j9R-gs-bJx" id="onO-FI-7ze"/>
+                        <outlet property="moodSelector" destination="joI-Md-NjL" id="j96-QM-RUQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-143" y="-181"/>
+        </scene>
+        <!--Mood List View Controller-->
+        <scene sceneID="wCP-4g-HzB">
+            <objects>
+                <tableViewController id="CVb-Uh-kgE" customClass="MoodListViewController" customModule="Mandala__hajerMohamed_" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="DUZ-Ht-DPW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UITableViewCell" id="Hga-VS-bbD">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Hga-VS-bbD" id="ELu-yl-X5z">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="CVb-Uh-kgE" id="dmy-ae-YU8"/>
+                            <outlet property="delegate" destination="CVb-Uh-kgE" id="rPO-hN-LL4"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yO2-at-Adc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="984" y="-181"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
