@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Mood Selection View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MoodSelectionViewController" customModule="Mandala_Areej_Alanze" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="Root_View">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Ky-zF-6Oq">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <connections>
+                                    <segue destination="WGV-13-Mks" kind="embed" identifier="embedContainerViewController" id="6Se-Px-R8s"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LX6-Ub-uwP">
+                                <rect key="frame" x="103.5" y="769" width="207" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="hbw-W2-7ag"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="addMoodTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j6R-yU-ZSU"/>
+                                </connections>
+                            </button>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KA3-14-qrK">
+                                <rect key="frame" x="0.0" y="830" width="414" height="66"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="loA-TX-e14">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="66"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ok3-84-ChU" customClass="ImageSelector" customModule="Mandala_Areej_Alanze" customModuleProvider="target">
+                                            <rect key="frame" x="8" y="16" width="398" height="50"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="zUg-A9-SjC"/>
+                                            </constraints>
+                                            <connections>
+                                                <action selector="moodSelectionChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="rAk-eZ-XEl"/>
+                                            </connections>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="Ok3-84-ChU" secondAttribute="bottom" constant="10" id="QEh-ou-YbZ"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Ok3-84-ChU" secondAttribute="trailing" id="cWl-oC-mtt"/>
+                                        <constraint firstItem="Ok3-84-ChU" firstAttribute="top" secondItem="loA-TX-e14" secondAttribute="topMargin" constant="8" id="irI-kJ-9L6"/>
+                                        <constraint firstItem="Ok3-84-ChU" firstAttribute="leading" secondItem="loA-TX-e14" secondAttribute="leadingMargin" id="wpR-CD-FWR"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KA3-14-qrK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3dj-1W-3Qg"/>
+                            <constraint firstAttribute="trailing" secondItem="KA3-14-qrK" secondAttribute="trailing" id="5UG-Ax-Ddp"/>
+                            <constraint firstItem="8Ky-zF-6Oq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8TV-rP-hTO"/>
+                            <constraint firstItem="LX6-Ub-uwP" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.5" id="FGe-j1-GOK"/>
+                            <constraint firstAttribute="bottom" secondItem="KA3-14-qrK" secondAttribute="bottom" id="O6F-vz-ttv"/>
+                            <constraint firstItem="LX6-Ub-uwP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OXm-Vq-E08"/>
+                            <constraint firstAttribute="bottom" secondItem="8Ky-zF-6Oq" secondAttribute="bottom" id="SBr-vs-QCG"/>
+                            <constraint firstItem="KA3-14-qrK" firstAttribute="top" secondItem="LX6-Ub-uwP" secondAttribute="bottom" constant="13" id="ZKG-Ee-kBI"/>
+                            <constraint firstAttribute="trailing" secondItem="8Ky-zF-6Oq" secondAttribute="trailing" id="afq-k7-CLh"/>
+                            <constraint firstItem="8Ky-zF-6Oq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="klS-ID-9bM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LX6-Ub-uwP" secondAttribute="bottom" constant="45" id="vJl-WL-A5d"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addMoodButton" destination="LX6-Ub-uwP" id="BpO-JJ-zgX"/>
+                        <outlet property="moodSelector" destination="Ok3-84-ChU" id="4z2-b4-5nY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1222" y="74"/>
+        </scene>
+        <!--Mood List View Controller-->
+        <scene sceneID="yN2-0b-F4z">
+            <objects>
+                <tableViewController id="WGV-13-Mks" customClass="MoodListViewController" customModule="Mandala_Areej_Alanze" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="48h-Ns-PjT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UITableViewCell" textLabel="Ck4-aQ-aA4" detailTextLabel="75H-Wp-8NF" style="IBUITableViewCellStyleSubtitle" id="qWg-kc-8eW">
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qWg-kc-8eW" id="dd6-Vq-XVT">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ck4-aQ-aA4">
+                                            <rect key="frame" x="20" y="6" width="25" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="75H-Wp-8NF">
+                                            <rect key="frame" x="20" y="22.5" width="40.5" height="13.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="WGV-13-Mks" id="drv-Q2-psF"/>
+                            <outlet property="delegate" destination="WGV-13-Mks" id="Ss4-nG-Zg3"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p0d-AW-IHy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-310" y="74"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
