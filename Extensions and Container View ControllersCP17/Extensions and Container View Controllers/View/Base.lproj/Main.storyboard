@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sfH-Z2-OPo">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Mood Selection View Controller-->
+        <scene sceneID="IcM-8K-8jE">
+            <objects>
+                <viewController id="sfH-Z2-OPo" customClass="MoodSelectionViewController" customModule="Extensions_and_Container_View_Controllers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eUk-Hn-aXW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HND-qI-Fvz">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <connections>
+                                    <segue destination="fqu-BN-9Ew" kind="embed" identifier="embedContainerViewController" id="1cG-p3-2NJ"/>
+                                </connections>
+                            </containerView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wP8-mk-ege">
+                                <rect key="frame" x="0.0" y="804" width="414" height="92"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="WQu-Nv-bM2">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="92"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="0Jv-j2-bhT">
+                                            <rect key="frame" x="8" y="8" width="398" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="LHO-6O-y2X"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="0Jv-j2-bhT" secondAttribute="bottomMargin" constant="34" id="L3C-ee-Uh9"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="0Jv-j2-bhT" secondAttribute="leadingMargin" id="Zad-Ys-HBj"/>
+                                        <constraint firstItem="0Jv-j2-bhT" firstAttribute="top" secondItem="WQu-Nv-bM2" secondAttribute="top" constant="8" id="fn9-72-63F"/>
+                                        <constraint firstItem="0Jv-j2-bhT" firstAttribute="trailing" secondItem="WQu-Nv-bM2" secondAttribute="trailingMargin" id="ukF-LG-tyo"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWT-Vz-Ziu">
+                                <rect key="frame" x="103.5" y="736" width="207" height="48"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="w1b-8d-GZx"/>
+                                </constraints>
+                                <state key="normal" title="Add Mood">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="addMoodTapped:" destination="sfH-Z2-OPo" eventType="touchUpInside" id="2px-B1-Trx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mwo-F1-G33"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="HND-qI-Fvz" secondAttribute="bottom" id="6vH-PA-vkc"/>
+                            <constraint firstItem="SWT-Vz-Ziu" firstAttribute="centerX" secondItem="eUk-Hn-aXW" secondAttribute="centerX" id="9T6-hR-pAJ"/>
+                            <constraint firstAttribute="bottom" secondItem="wP8-mk-ege" secondAttribute="bottom" id="GAM-z9-0YS"/>
+                            <constraint firstItem="HND-qI-Fvz" firstAttribute="leading" secondItem="eUk-Hn-aXW" secondAttribute="leading" id="Ger-w8-IqN"/>
+                            <constraint firstAttribute="trailing" secondItem="wP8-mk-ege" secondAttribute="trailing" id="N6s-u9-vui"/>
+                            <constraint firstItem="HND-qI-Fvz" firstAttribute="top" secondItem="eUk-Hn-aXW" secondAttribute="top" id="XUB-Qh-4jm"/>
+                            <constraint firstItem="wP8-mk-ege" firstAttribute="top" secondItem="SWT-Vz-Ziu" secondAttribute="bottom" constant="20" id="ecI-l5-bAz"/>
+                            <constraint firstItem="wP8-mk-ege" firstAttribute="leading" secondItem="eUk-Hn-aXW" secondAttribute="leading" id="eiK-Ti-Xoi"/>
+                            <constraint firstAttribute="trailing" secondItem="HND-qI-Fvz" secondAttribute="trailing" id="mIF-0W-uPa"/>
+                            <constraint firstItem="SWT-Vz-Ziu" firstAttribute="width" secondItem="mwo-F1-G33" secondAttribute="width" multiplier="0.5" id="t9V-OH-sDi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addMoodButton" destination="SWT-Vz-Ziu" id="OGR-c7-cdg"/>
+                        <outlet property="stackView" destination="0Jv-j2-bhT" id="Xta-sA-u8O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="01o-uB-awR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="25"/>
+        </scene>
+        <!--Mood List View Controller-->
+        <scene sceneID="gC4-JC-V2t">
+            <objects>
+                <tableViewController id="fqu-BN-9Ew" customClass="MoodListViewController" customModule="Extensions_and_Container_View_Controllers" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="13g-6V-hjM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UITableViewCell" textLabel="faJ-Sm-YY4" detailTextLabel="YhE-ld-kDx" style="IBUITableViewCellStyleSubtitle" id="SrT-PN-1gv">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SrT-PN-1gv" id="VkQ-wZ-i3h">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="faJ-Sm-YY4">
+                                            <rect key="frame" x="20" y="6" width="25" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YhE-ld-kDx">
+                                            <rect key="frame" x="20" y="22.5" width="40.5" height="13.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="fqu-BN-9Ew" id="IhH-EV-fCQ"/>
+                            <outlet property="delegate" destination="fqu-BN-9Ew" id="OQt-Ro-BhQ"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QVn-ym-u55" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="897" y="24"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
