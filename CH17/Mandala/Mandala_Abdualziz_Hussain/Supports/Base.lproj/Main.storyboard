@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ci7-6C-kpl">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Mood Selection View Controller-->
+        <scene sceneID="By5-ic-oVn">
+            <objects>
+                <viewController id="ci7-6C-kpl" customClass="MoodSelectionViewController" customModule="Mandala_Abdualziz_Hussain" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r5g-nC-mkI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gDU-TB-JUg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <connections>
+                                    <segue destination="1Ma-wo-LyM" kind="embed" identifier="embedContainerViewController" id="FRm-hN-h45"/>
+                                </connections>
+                            </containerView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uTp-O8-tii">
+                                <rect key="frame" x="0.0" y="830" width="414" height="66"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="4za-hc-iHT">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="66"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="YqU-Fk-sT1">
+                                            <rect key="frame" x="8" y="8" width="398" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="izr-Ut-Ayu"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="YqU-Fk-sT1" firstAttribute="top" secondItem="4za-hc-iHT" secondAttribute="top" constant="8" id="T4B-5o-cFk"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="YqU-Fk-sT1" secondAttribute="leadingMargin" id="dkf-OA-nFQ"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="YqU-Fk-sT1" secondAttribute="bottom" id="l0U-Zb-cK7"/>
+                                        <constraint firstItem="YqU-Fk-sT1" firstAttribute="trailingMargin" secondItem="4za-hc-iHT" secondAttribute="trailingMargin" id="u9U-43-LUa"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7t-Uq-x68">
+                                <rect key="frame" x="103.5" y="762" width="207" height="48"/>
+                                <color key="backgroundColor" name="angryRed"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="dug-Bm-Xaf"/>
+                                </constraints>
+                                <state key="normal" title="Add Mood">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="addMoodTapped:" destination="ci7-6C-kpl" eventType="touchUpInside" id="YaC-W6-nh4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4UB-Zz-hFK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gDU-TB-JUg" secondAttribute="trailing" id="3FV-Ks-SsA"/>
+                            <constraint firstItem="gDU-TB-JUg" firstAttribute="top" secondItem="r5g-nC-mkI" secondAttribute="top" id="3sV-DN-3Ci"/>
+                            <constraint firstAttribute="bottom" secondItem="gDU-TB-JUg" secondAttribute="bottom" id="Akw-lL-Ic0"/>
+                            <constraint firstItem="j7t-Uq-x68" firstAttribute="width" secondItem="4UB-Zz-hFK" secondAttribute="width" multiplier="0.5" id="Ikx-GP-Np0"/>
+                            <constraint firstAttribute="trailing" secondItem="uTp-O8-tii" secondAttribute="trailing" id="W0c-2k-1xs"/>
+                            <constraint firstItem="uTp-O8-tii" firstAttribute="leading" secondItem="r5g-nC-mkI" secondAttribute="leading" id="X3q-1B-jbe"/>
+                            <constraint firstItem="gDU-TB-JUg" firstAttribute="leading" secondItem="r5g-nC-mkI" secondAttribute="leading" id="YnU-ap-nKf"/>
+                            <constraint firstItem="j7t-Uq-x68" firstAttribute="centerX" secondItem="r5g-nC-mkI" secondAttribute="centerX" id="doI-UN-Z9f"/>
+                            <constraint firstAttribute="bottom" secondItem="uTp-O8-tii" secondAttribute="bottom" id="j9h-am-h5W"/>
+                            <constraint firstItem="uTp-O8-tii" firstAttribute="top" secondItem="j7t-Uq-x68" secondAttribute="bottom" constant="20" id="tvM-oN-P4y"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addMoodButton" destination="j7t-Uq-x68" id="NGK-PE-Ba6"/>
+                        <outlet property="stackView" destination="YqU-Fk-sT1" id="8pY-5J-oVc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tdv-oX-htY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="907" y="87"/>
+        </scene>
+        <!--Mood List View Controller-->
+        <scene sceneID="thV-LQ-JsS">
+            <objects>
+                <tableViewController id="1Ma-wo-LyM" customClass="MoodListViewController" customModule="Mandala_Abdualziz_Hussain" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ij5-Ys-jR8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UITableViewCell" textLabel="RRR-wd-GDR" detailTextLabel="fvQ-S5-VOr" style="IBUITableViewCellStyleSubtitle" id="txa-c9-1bb">
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="txa-c9-1bb" id="bsP-ld-psK">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RRR-wd-GDR">
+                                            <rect key="frame" x="20" y="6" width="25" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fvQ-S5-VOr">
+                                            <rect key="frame" x="20" y="22.5" width="40.5" height="13.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="1Ma-wo-LyM" id="PZY-8a-gRy"/>
+                            <outlet property="delegate" destination="1Ma-wo-LyM" id="BV0-5h-8PE"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="mxw-eX-2ua"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OAX-bb-RGY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1825" y="86"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="angryRed">
+            <color red="0.70196078431372544" green="0.098039215686274508" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qTH-CD-Ygn">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Mood Selection View Controller-->
+        <scene sceneID="CSj-DF-FRm">
+            <objects>
+                <viewController id="qTH-CD-Ygn" customClass="MoodSelectionViewController" customModule="Mandala_Abdualziz_Hussain" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nHw-hR-yjU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hXX-4T-T7e">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <connections>
+                                    <segue destination="LOf-DW-0Uh" kind="embed" identifier="embedContainerViewController" id="eCI-51-aET"/>
+                                </connections>
+                            </containerView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mND-Gh-Ovs">
+                                <rect key="frame" x="0.0" y="830" width="414" height="66"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="NlS-2P-HCv">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="66"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nUj-b4-5Qy" customClass="ImageSelector" customModule="Mandala_Abdualziz_Hussain" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="8" width="414" height="50"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="11X-LP-gLu"/>
+                                            </constraints>
+                                            <connections>
+                                                <action selector="moodSelectionChanged:" destination="qTH-CD-Ygn" eventType="valueChanged" id="X12-NV-Sk2"/>
+                                            </connections>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="nUj-b4-5Qy" secondAttribute="trailing" constant="-8" id="248-DJ-rsZ"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="nUj-b4-5Qy" secondAttribute="bottom" id="9au-JA-kKk"/>
+                                        <constraint firstItem="nUj-b4-5Qy" firstAttribute="top" secondItem="NlS-2P-HCv" secondAttribute="top" constant="8" id="ReU-Y7-Nss"/>
+                                        <constraint firstItem="nUj-b4-5Qy" firstAttribute="leadingMargin" secondItem="NlS-2P-HCv" secondAttribute="leading" constant="8" id="esh-yJ-XRG"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12i-iL-xJD">
+                                <rect key="frame" x="103.5" y="762" width="207" height="48"/>
+                                <color key="backgroundColor" name="angryRed"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="jt1-qp-oEx"/>
+                                </constraints>
+                                <state key="normal" title="Add Mood">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="addMoodTapped:" destination="qTH-CD-Ygn" eventType="touchUpInside" id="o9v-Yo-Twd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ttv-xP-IuN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="mND-Gh-Ovs" secondAttribute="trailing" id="4a7-PS-Ktt"/>
+                            <constraint firstAttribute="trailing" secondItem="hXX-4T-T7e" secondAttribute="trailing" id="AgT-iR-KIA"/>
+                            <constraint firstItem="mND-Gh-Ovs" firstAttribute="top" secondItem="12i-iL-xJD" secondAttribute="bottom" constant="20" id="AvJ-KE-6c0"/>
+                            <constraint firstItem="12i-iL-xJD" firstAttribute="centerX" secondItem="nHw-hR-yjU" secondAttribute="centerX" id="Kor-ek-Czj"/>
+                            <constraint firstAttribute="bottom" secondItem="mND-Gh-Ovs" secondAttribute="bottom" id="Sbx-0u-jtV"/>
+                            <constraint firstItem="hXX-4T-T7e" firstAttribute="leading" secondItem="nHw-hR-yjU" secondAttribute="leading" id="VXb-BM-Beh"/>
+                            <constraint firstItem="hXX-4T-T7e" firstAttribute="top" secondItem="nHw-hR-yjU" secondAttribute="top" id="X6x-KV-kLG"/>
+                            <constraint firstAttribute="bottom" secondItem="hXX-4T-T7e" secondAttribute="bottom" id="c5z-fS-uHZ"/>
+                            <constraint firstItem="mND-Gh-Ovs" firstAttribute="leading" secondItem="nHw-hR-yjU" secondAttribute="leading" id="feI-mk-pAk"/>
+                            <constraint firstItem="12i-iL-xJD" firstAttribute="width" secondItem="ttv-xP-IuN" secondAttribute="width" multiplier="0.5" id="oba-e0-YPG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addMoodButton" destination="12i-iL-xJD" id="eiU-Kh-xHl"/>
+                        <outlet property="moodSelector" destination="nUj-b4-5Qy" id="Kjt-pd-PgV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RI7-ju-MrM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="25"/>
+        </scene>
+        <!--Mood List View Controller-->
+        <scene sceneID="TKG-xk-itI">
+            <objects>
+                <tableViewController id="LOf-DW-0Uh" customClass="MoodListViewController" customModule="Mandala_Abdualziz_Hussain" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="PjU-Fc-iEX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UITableViewCell" textLabel="F5i-ja-BGl" detailTextLabel="dHA-gH-mhz" style="IBUITableViewCellStyleSubtitle" id="eCM-DZ-KUC">
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eCM-DZ-KUC" id="XUp-SM-lc0">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="F5i-ja-BGl">
+                                            <rect key="frame" x="20" y="6" width="25" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dHA-gH-mhz">
+                                            <rect key="frame" x="20" y="22.5" width="40.5" height="13.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="LOf-DW-0Uh" id="cs9-4C-1PT"/>
+                            <outlet property="delegate" destination="LOf-DW-0Uh" id="U7C-6c-nWG"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ikF-V5-kT5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="897" y="24"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="angryRed">
+            <color red="0.70200002193450928" green="0.097999997437000275" blue="0.25099998712539673" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
